@@ -1,0 +1,401 @@
+/*
+SPDX-FileCopyrightText: 2026 铟子vinds [https://y.vinds.top]
+SPDX-License-Identifier: GPL-3.0-or-later
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.4;
+    transition: background-color 0.3s, color 0.3s;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column
+}
+
+body.dk {
+    background-color: #1a1a2e;
+    color: #e0e0e0
+}
+
+.a {
+    background: #0080ff;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0
+}
+
+.dk .a {
+    background: #0060c0
+}
+
+.b {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.c {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px
+}
+
+.d {
+    display: flex;
+    align-items: center;
+    gap: 15px
+}
+
+.e,
+.f {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s
+}
+
+.e:hover,
+.f:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px)
+}
+
+.f.active {
+    background: #2ecc71;
+    color: #fff;
+    box-shadow: 0 0 8px #2ecc71
+}
+
+.dk .f.active {
+    background: #27ae60;
+    box-shadow: 0 0 8px #27ae60
+}
+
+.g {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: visible
+}
+
+.h {
+    background: #fff;
+    border-radius: 20px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08)
+}
+
+.dk .h {
+    background: #2d3047;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2)
+}
+
+.i {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f0f7ff;
+    border-radius: 16px;
+    padding: 6px 12px;
+    min-width: 70px
+}
+
+.dk .i {
+    background: #2a3a5a
+}
+
+.j {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #6c7a89;
+    font-weight: 600
+}
+
+.dk .j {
+    color: #bbccff
+}
+
+.k {
+    font-size: 24px;
+    font-weight: 800;
+    color: #0088ff;
+    line-height: 1.2
+}
+
+.dk .k {
+    color: #6cb2ff
+}
+
+.l {
+    background: #0088ff;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 6px rgba(0, 136, 255, 0.3)
+}
+
+.l:hover {
+    background: #0066cc;
+    transform: scale(0.97)
+}
+
+.m {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background-color: #eef2f8;
+    border-radius: 24px;
+    padding: 16px;
+    margin-bottom: 10px;
+    touch-action: none;
+    width: 100%;
+    aspect-ratio: 1/1
+}
+
+.dk .m {
+    background: #252a3c
+}
+
+.n {
+    text-align: center;
+    margin-top: 6px
+}
+
+.o {
+    font-size: 14px;
+    background: #eef3fc;
+    border-radius: 30px;
+    padding: 4px 14px;
+    font-weight: 500;
+    display: inline-block
+}
+
+.dk .o {
+    background: #2d3b4f;
+    color: #c0d0e8
+}
+
+.p {
+    max-width: 1200px;
+    margin: 10px auto 20px;
+    padding: 20px;
+    text-align: center;
+    color: #666;
+    border-top: 1px solid #eaeaea;
+    flex-shrink: 0
+}
+
+.dk .p {
+    color: #aaa;
+    border-top: 1px solid #3a3d5c
+}
+
+.q {
+    font-size: 16px;
+    line-height: 1.8
+}
+
+.q p {
+    margin-bottom: 15px
+}
+
+.q a,
+.q a:visited {
+    text-decoration: none;
+    color: #0080ff
+}
+
+.dk .q a,
+.dk .q a:visited {
+    color: #0080ff
+}
+
+.q a:hover,
+.dk .q a:hover {
+    color: #3399ff
+}
+
+@media (max-width:560px) {
+    .m {
+        gap: 8px;
+        padding: 12px
+    }
+    .k {
+        font-size: 22px
+    }
+    .l {
+        padding: 5px 12px;
+        font-size: 13px
+    }
+    .i {
+        min-width: 60px;
+        padding: 5px 10px
+    }
+    .c {
+        font-size: 22px
+    }
+    .b {
+        padding: 10px 16px
+    }
+}
+
+@media (max-width:430px) {
+    .m {
+        gap: 6px;
+        padding: 10px
+    }
+    .k {
+        font-size: 20px
+    }
+}
+
+.m>div {
+    aspect-ratio: 1/1;
+    background-color: #cddbe9;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #2d3e50;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08)
+}
+
+.dk .m>div {
+    background-color: #3a405b;
+    color: #f0f3fc
+}
+
+@media (max-width:500px) {
+    .m>div {
+        font-size: 1.4rem
+    }
+}
+
+@media (max-width:400px) {
+    .m>div {
+        font-size: 1.2rem
+    }
+}
+
+.m>div[data-v="2"] {
+    background-color: #ede0c8;
+    color: #776e65
+}
+
+.m>div[data-v="4"] {
+    background-color: #f2b179;
+    color: #f9f6f2
+}
+
+.m>div[data-v="8"] {
+    background-color: #f59563;
+    color: #f9f6f2
+}
+
+.m>div[data-v="16"] {
+    background-color: #f67c5f;
+    color: #f9f6f2
+}
+
+.m>div[data-v="32"] {
+    background-color: #f65e3b;
+    color: #f9f6f2
+}
+
+.m>div[data-v="64"] {
+    background-color: #ed4b2e;
+    color: #f9f6f2
+}
+
+.m>div[data-v="128"] {
+    background-color: #edcf72;
+    color: #776e65
+}
+
+.m>div[data-v="256"] {
+    background-color: #edcc61;
+    color: #776e65
+}
+
+.m>div[data-v="512"] {
+    background-color: #edc850;
+    color: #f9f6f2
+}
+
+.m>div[data-v="1024"] {
+    background-color: #edc53f;
+    color: #f9f6f2
+}
+
+.m>div[data-v="2048"] {
+    background-color: #edc22e;
+    color: #f9f6f2;
+    box-shadow: 0 0 12px rgba(237, 194, 46, 0.6)
+}
+
+.m>div[data-v="4096"] {
+    background-color: #3c3a32;
+    color: #f9f6f2
+}
+
+.dk .m>div[data-v="2"] {
+    background-color: #d6cdb2;
+    color: #2c2b26
+}
+
+.dk .m>div[data-v="4"] {
+    background-color: #e09d5e;
+    color: #fff
+}
+
+.dk .m>div[data-v="128"] {
+    background-color: #e6c384;
+    color: #2c2b26
+}
+
+.dk .m>div[data-v="256"] {
+    background-color: #e6bd6b;
+    color: #2c2b26
+}
