@@ -1,0 +1,83 @@
+<!--
+SPDX-FileCopyrightText: 2026 铟子vinds [https://y.vinds.top]
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>vinds | 2048</title>
+    <link rel="stylesheet" href="/rank/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body class="rank-mode">
+    <div class="a">
+        <div class="b">
+            <span class="c">2048</span>
+            <div class="d">
+                <button class="f" style="display:none" id="p"><i class="fas fa-robot"></i></button>
+                <button class="e" id="q"><i class="fas fa-sun"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="middle-row">
+        <div class="game-column">
+            <div class="g" id="gameArea">
+                <div class="h">
+                    <div class="i">
+                        <div class="j">得分</div>
+                        <div class="k" id="r">0</div>
+                    </div>
+                    <div class="i">
+                        <div class="j">最高分</div>
+                        <div class="k" id="s">0</div>
+                    </div>
+                    <button class="l" id="z"><i class="fas fa-undo-alt"></i>撤回</button>
+                    <button class="l" id="t"><i class="fas fa-arrows-rotate"></i>新游戏</button>
+                </div>
+                <div class="m" id="u"></div>
+                <div class="n"><span class="o" id="v"></span></div>
+            </div>
+        </div>
+
+        <div class="rank-panel">
+            <div class="rank-header">
+                <span class="rank-title">排行榜</span>
+                <button id="refreshRankBtn" title="刷新">⟳</button>
+            </div>
+            <div id="rankList">
+                <div class="rank-empty">暂无数据</div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="p">
+        <div class="q">
+            <p><a href="https://www.gnu.org/licenses/gpl-3.0.zh-cn.html" target="_blank" rel="noopener noreferrer">GNU General Public License v3.0</a> | Copyright © 2026-present | <a href="https://y.vinds.top" target="_blank" rel="noopener noreferrer">铟子vinds</a></p>
+        </div>
+    </footer>
+
+    <div id="nameModal" style="display:none;">
+        <div class="modal-overlay">
+            <div class="modal-box">
+                <h3>恭喜进入前 100 名</h3>
+                <p>请输入您的用户名：</p>
+                <input type="text" id="playerNameInput" maxlength="200" placeholder="用户名" />
+                <div id="nameError" style="color:#e74c3c;font-size:13px;display:none;"></div>
+                <div class="modal-buttons">
+                    <button id="submitNameBtn">提交</button>
+                    <button id="cancelNameBtn">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/rank/script.js"></script>
+</body>
+
+</html>
