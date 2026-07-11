@@ -27,6 +27,8 @@ SPDX-License-Identifier: GPL-3.0-or-later
 submitRankEntry('test', 114514)
 ```
 
+但我设置了 `rank` 参数与 `bot` 参数不能同时启动。
+
 项目由 AI 辅助完成，其中样式完全由 AI 完成。
 
 ## 项目结构
