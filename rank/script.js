@@ -798,4 +798,24 @@ if (refreshBtn) {
 //
 renderRankList();
 
+if (typeof robotInterval !== 'undefined') {
+    robotInterval = null;
+}
+const robotBtn = document.getElementById('p');
+if (robotBtn) {
+    robotBtn.style.display = 'none';
+    robotBtn.classList.remove('active');
+}
+if (typeof aq === 'function') {
+    aq();
+}
+
+window.ar = function() { return; };
+window.am = function() { return; };
+window.ap = function() { return; };
+window.aq = function() { return; };
+
+Object.defineProperty(window, 'robotInterval', { value: null, writable: false });
+Object.defineProperty(window, 'v', { value: false, writable: false });
+
 console.log('suc to rank');
