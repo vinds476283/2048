@@ -27,6 +27,8 @@ Adding the parameter `rank=<any string>` enables the leaderboard mode, allowing 
 submitRankEntry('test', 114514)
 ```
 
+But I have set it so that the `rank` parameter and the `bot` parameter cannot be enabled at the same time.
+
 The project is completed with AI assistance, and the styling is entirely done by AI.
 
 ## Project Structure
