@@ -20,7 +20,14 @@ Made for a school assignment.
 
 ## How to Use
 
-Visit [2048.vinds.top](https://2048.vinds.top) to play. Add the parameter `bot=<positive integer>` to enable the bot, which will play automatically. The positive integer specifies the delay between moves (in milliseconds). The bot uses expectimax search and a heuristic evaluation function – a traditional algorithm. The project was completed with the assistance of AI.
+Visit [2048.vinds.top](https://2048.vinds.top) to play. Add the parameter `bot=<positive integer>` to enable the bot, which will play automatically. The positive integer specifies the delay between moves (in milliseconds). The bot uses expectimax search and a heuristic evaluation function – a traditional algorithm.
+
+Adding the parameter `rank=<any string>` enables the leaderboard mode, allowing access to the leaderboard. If you make it into the top 100, you will appear on the board. However,  I am too lazy to implement an anti‑cheat mechanism. If you enter code like the following in the console, you can submit fake scores, but I strongly oppose this. If I find any, I will delete them:
+```JavaScript
+submitRankEntry('test', 114514)
+```
+
+The project is completed with AI assistance, and the styling is entirely done by AI.
 
 ## Project Structure
 
